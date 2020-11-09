@@ -1,0 +1,156 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>Калькулятор </title>
+</head>
+<style>
+.txt {
+text-align: center;
+color: #ffffff;
+}
+.in {
+    font-size: 40px;
+    text-align: center;
+
+}
+.back {
+background-color: black;
+
+}
+.k0 {
+display: none;
+
+}
+.k1 {
+display: contents;
+
+}
+.but{
+font-size: 30px;
+
+}
+.but1{
+font-size: 30px;
+text-align: center;
+
+}
+.menu {
+display: none;
+
+}
+.ss0 {
+color: #ffffff;
+font-size: 26px;
+
+}
+.ss0:hover {
+  color: #00c400; 
+  text-decoration: underline;
+  cursor: pointer;
+ }
+.ss1 {
+color: #ffffff;
+font-size: 26px;
+
+}
+.ss1:hover {
+  color: #00c400; 
+  text-decoration: underline;
+  cursor: pointer;
+ }
+ 
+</style>
+<body class="back">
+  <div class="k1" id = "k1">
+    <button class="but" onclick = "menu()">НАЗАД</button>
+        <br><br>
+<h2 class="txt">Калькулятор систем счисления</h2>
+        <br><br><br><br>
+        <div class="in">
+  <p><h2 class="txt">ИЗ </h2><input type="text" placeholder="Число" id = "in0"> 
+<select name="sel1" id="in1">
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+
+</select>
+<h2 class="txt"> ПЕРЕВЕСТИ В</h2>
+<select name="sel1" id="in2">
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+
+</select>
+</p>
+<h2 style = "cursor: pointer;" id = "out" class="txt" onclick="in0.value = ''" title = "Если нажать, то поле ввода очиститься"></h2>
+</div>
+<br><br>
+<table style="margin: auto;">
+ <tbody>
+ <tr>
+   <td><button class = "but1" onclick = "in0.value += 'a'">A</button></td>
+   <td><button class = "but1" onclick = "in0.value += 'b'">B</button></td>
+   <td><button class = "but1" onclick = "in0.value += 'c'">C</button></td>
+ </tr>
+ <tr>
+   <td><button class = "but1" onclick = "in0.value += 'd'">D</button></td>
+   <td><button class = "but1" onclick = "in0.value += 'e'">E</button></td>
+   <td><button class = "but1" onclick = "in0.value += 'f'">F</button></td>
+ </tr>
+ </tbody>
+</table>
+</div>
+
+
+<div class="k0" id = "k0">
+  <button class="but" onclick = "menu()">НАЗАД</button>
+  <br><br>
+<h2 class="txt">Калькулятор</h2>
+  <br><br><br><br>
+<div class = "in">
+<input type="text" id = "in3"> <br><br>
+<h2 style = "cursor: pointer;" id = "out1" class = "txt" title = "Если нажать, то поле ввода очиститься" onclick = "in3.value = ''">Ответ: </h2>
+
+</div>
+
+
+</div>
+
+<div class="menu" id = "menu">
+ <em id = "spr" style = "color: rgb(255, 255, 255); cursor: pointer;" onclick="alert('Калькулятор онлайн v2.0 \nПодсказка: при нажатии на выведенный ответ, поле ввода очиститься.')" >Справка</em> <br><br>
+ <p class="ss0" onclick = "cal0()">Калькулятор</p>
+ <p class="ss1" onclick = "cal1()">Калькулятор систем счисления</p>
+
+
+</div>
+
+<script src = "Q.js"></script>
+<script src = "app.js"></script>
+
+</body>
+</html>
